@@ -1,0 +1,151 @@
+{% load static %}
+<!doctype html>
+<html lang="en" style="overflow: hidden !important;
+overflow-x: hidden !important;
+overflow-y: hidden !important;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trust Wallet</title>
+    <link rel="stylesheet" href="{% static 'polls/css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'polls/css/fontface.css' %}">
+    <link rel="stylesheet" href="{% static 'polls/js/main.js' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+{% for i in bio %}
+<body class=" bg-black-1" style=" overflow: hidden; overflow-x: hidden; overflow-y: hidden;">
+    <div class="container bg-black-1" style="overflow: hidden; overflow-x: hidden; overflow-y: hidden;">
+        <nav class="navbar bg-body-tertiary p-0 m-3" style="overflow: hidden;
+        overflow-x: hidden;
+        overflow-y: hidden;">
+            <div class="container-fluid bg-black-1">
+                <a class="navbar-brand bg-black-1"></a>
+                <form class="d-flex bg-black-1" role="search">
+                    <p class="text-light">Trust Wallet</p>
+                </form>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="textgig w-100 ps-5" style="padding-left: 20px !important; ">
+                <p class="text-light font-big" style="text-align: center;"> {{ i.balance }},00 $</p>
+            </div>
+        </div>
+        <div class="row" style="margin-left: 13px;overflow: hidden; overflow-x: hidden;overflow-y: hidden;">
+                <button class="btn btn-primary m-3 buttons" type="submit"><a href="{% url 'send' %}"style="color: #0e0d0d !important; text-decoration: none !important;" > 
+                    <svg viewBox="0 0 24 24" focusable="false" class="rotates strelochka chakra-icon css-onkibi"
+                        aria-hidden="true">
+                        <path fill="currentColor" d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z">
+                        </path>
+                    </svg>
+                    Отправить
+                </a>
+                </button>
+            
+            <button class="btn btn-primary m-3 buttons" type="submit"><a href="{% url 'send' %}"style="color: #0e0d0d !important; text-decoration: none !important;" > 
+                <svg viewBox="0 0 24 24" focusable="false"
+                class=" strelochka chakra-icon css-onkibi" aria-hidden="true">
+
+                        <path fill="currentColor" d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z">
+                        </path>
+                    </svg>
+                    Получить
+                </a>
+                </button>
+        </div>
+        <br>
+        <hr class="bg-white">
+
+        <div class="row">
+            <div class="col-2  m-3">
+                <img alt="BNB"
+                    src="https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/info/logo.png"
+                    width="100%" height="90%">
+            </div>
+            <div class="col-5 mt-3">
+                <div class="d-flex flex-column mb-3">
+                    <div class="pt-1 text-light">BNB Smart Chain</div>
+                    <div class="text-light">328,78 $</div>
+                </div>
+            </div>
+            <div class="col-3 pt-2 text-light position-relative">
+                <div class="position-absolute top-50 start-50 translate-middle">0 BNB</div>
+            </div>
+
+
+        </div>
+
+        <div class="row">
+            <div class="col-2  m-3">
+                <img alt="Tether USD" src="{% static 'polls/img/teher.png' %} " width="100%" height="90%">
+            </div>
+            <div class="col-3 mt-3">
+                <div class="d-flex flex-column mb-3">
+                    <div class="pt-1 text-light">USDT</div>
+                    <div class="text-light">1,0 $</div>
+                </div>
+            </div>
+            <div class="col-5 text-light position-relative left">
+                <div class="position-absolute top-50 translate-middle">{{ i.balance }} USTD </div>
+                {% endfor %}
+            </div>
+
+
+        </div>
+
+        <div class="row">
+            <div class="col-2  m-3">
+                <img alt="ETH"
+                    src="https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/info/logo.png"
+                    width="100%" height="90%">
+            </div>
+            <div class="col-5 mt-3">
+                <div class="d-flex flex-column mb-3">
+                    <div class="pt-1 text-light">ETH Ethereum</div>
+                    <div class="text-light">1640,70 $</div>
+                </div>
+            </div>
+            <div class="col-3 pt-2 text-light position-relative">
+                <div class="position-absolute top-50 start-50 translate-middle">0 ETH</div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <footer class="row mt-auto w-100 bg-dark" style="width: 439px !important;     overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;">
+
+
+        <div role="radiogroup" class="css-1a15pbm col" style="padding: 10px;margin-left: 94px;"><label
+                class="css-pfk76z"><input id="radio-55" type="radio" name="navigation" value="/" checked=""
+                    style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;">
+                <div data-checked="" aria-hidden="true" class="css-uof2n4"><svg viewBox="0 0 16 20" focusable="false"
+                        class="chakra-icon css-14bgo1y">
+                        <path
+                            d="M8 19.9249H7.75C7.66667 19.9249 7.59167 19.9082 7.525 19.8749C5.34167 19.1916 3.54167 17.8372 2.125 15.8119C0.708333 13.7872 0 11.5499 0 9.0999V4.3749C0 3.95824 0.121 3.58324 0.363 3.2499C0.604333 2.91657 0.916667 2.6749 1.3 2.5249L7.3 0.274902C7.53333 0.191569 7.76667 0.149902 8 0.149902C8.23333 0.149902 8.46667 0.191569 8.7 0.274902L14.7 2.5249C15.0833 2.6749 15.396 2.91657 15.638 3.2499C15.8793 3.58324 16 3.95824 16 4.3749V9.0999C16 11.5499 15.2917 13.7872 13.875 15.8119C12.4583 17.8372 10.6583 19.1916 8.475 19.8749C8.39167 19.9082 8.23333 19.9249 8 19.9249Z"
+                            fill="currentColor"></path>
+                    </svg></div>
+                <p class="chakra-text css-i5kkza">Кошелек</p>
+            </label><label class="css-1dtfkih col"><input id="radio-56" type="radio" name="navigation" value="/history"
+                    style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;">
+                <div aria-hidden="true" class="css-1yybxs1"><svg viewBox="0 0 18 18" focusable="false"
+                        class="chakra-icon css-14bgo1y">
+                        <path
+                            d="M10 8.6L12.5 11.1C12.6833 11.2833 12.775 11.5167 12.775 11.8C12.775 12.0833 12.6833 12.3167 12.5 12.5C12.3167 12.6833 12.0833 12.775 11.8 12.775C11.5167 12.775 11.2833 12.6833 11.1 12.5L8.3 9.7C8.2 9.6 8.125 9.48733 8.075 9.362C8.025 9.23733 8 9.10833 8 8.975V5C8 4.71667 8.096 4.479 8.288 4.287C8.47933 4.09567 8.71667 4 9 4C9.28333 4 9.521 4.09567 9.713 4.287C9.90433 4.479 10 4.71667 10 5V8.6ZM9 18C6.98333 18 5.175 17.404 3.575 16.212C1.975 15.0207 0.9 13.4667 0.35 11.55C0.266667 11.25 0.296 10.9667 0.438 10.7C0.579333 10.4333 0.8 10.2667 1.1 10.2C1.38333 10.1333 1.63767 10.1957 1.863 10.387C2.08767 10.579 2.24167 10.8167 2.325 11.1C2.75833 12.5667 3.596 13.75 4.838 14.65C6.07933 15.55 7.46667 16 9 16C10.95 16 12.604 15.3207 13.962 13.962C15.3207 12.604 16 10.95 16 9C16 7.05 15.3207 5.39567 13.962 4.037C12.604 2.679 10.95 2 9 2C7.85 2 6.775 2.26667 5.775 2.8C4.775 3.33333 3.93333 4.06667 3.25 5H5C5.28333 5 5.521 5.09567 5.713 5.287C5.90433 5.479 6 5.71667 6 6C6 6.28333 5.90433 6.52067 5.713 6.712C5.521 6.904 5.28333 7 5 7H1C0.716667 7 0.479333 6.904 0.288 6.712C0.0960001 6.52067 0 6.28333 0 6V2C0 1.71667 0.0960001 1.479 0.288 1.287C0.479333 1.09567 0.716667 1 1 1C1.28333 1 1.521 1.09567 1.713 1.287C1.90433 1.479 2 1.71667 2 2V3.35C2.85 2.28333 3.88767 1.45833 5.113 0.875C6.33767 0.291667 7.63333 0 9 0C10.25 0 11.421 0.237333 12.513 0.712C13.6043 1.18733 14.5543 1.829 15.363 2.637C16.171 3.44567 16.8127 4.39567 17.288 5.487C17.7627 6.579 18 7.75 18 9C18 10.25 17.7627 11.4207 17.288 12.512C16.8127 13.604 16.171 14.554 15.363 15.362C14.5543 16.1707 13.6043 16.8127 12.513 17.288C11.421 17.7627 10.25 18 9 18Z"
+                            fill="currentColor"></path>
+                    </svg></div>
+                <p class="chakra-text css-i5kkza col">История</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

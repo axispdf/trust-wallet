@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body{ 
+    font-family: 'Roboto' !important;
+    font-style: normal !important;
+    font-display: swap !important;
+    font-weight: 400 !important;
+    src: url('./files/roboto-cyrillic-ext-400-normal.woff2') format('woff2'), url('./files/roboto-all-400-normal.woff') format('woff') !important;
+    unicode-range: U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F !important;
+    background-color: rgb(26 28 30) !important;
+    overflow: hidden !important;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 67px;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+.css-1a15pbm {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    align-self: center;
+    padding-inline: 28px;
+    width: 100%;
+    max-width: 375px;
+    margin-top: -4px;
+    margin-bottom: -2px;
+}
+
+.css-pfk76z {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(162, 201, 255);
+}
+
+.css-1dtfkih {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(187, 199, 219);
+}
+
+
+a.text:active, /* активная/посещенная ссылка */
+a.text:hover,  /* при наведении */
+a.text {
+  text-decoration: none !important;
+  color: #666 !important;
+}
+
+
+.textgig{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 6em !important
+}
+
+.css-1489zcy {
+    color: rgb(195, 198, 207);
+    margin-left: 16px;
+    font-size: 0.75rem;
+}
+
+.font-big-1{
+    font-size: 1.3rem;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    rgb(189, 189, 189) !important;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    rgb(189, 189, 189) !important;
+   opacity:  1 !important;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    rgb(189, 189, 189) !important;
+   opacity:  1 !important;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    rgb(189, 189, 189) !important;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    rgb(189, 189, 189) !important;
+}
+::placeholder { /* Most modern browsers support this now. */
+   color:    rgb(189, 189, 189) !important;
+}
+
+
+.form-control-static{
+    width: 100%;
+    min-width: var(--chakra-sizes-0);
+    outline: transparent solid 2px;
+    outline-offset: 2px;
+    position: relative;
+    appearance: none;
+    transition-property: var(--chakra-transition-property-common) !important;
+    transition-duration: var(--chakra-transition-duration-normal) !important;
+    font-size: 1rem !important;
+    padding-inline: 16px;
+    height: 56px;
+    border-radius: 4px !important;
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+    line-height: 20px !important;
+    border: 1px solid rgb(141, 145, 153) !important;
+    background-color: rgba(240, 248, 255, 0) !important;
+    background: rgba(39, 136, 233, 0) !important;
+    box-shadow: var(--chakra-shadows-none);
+    color: rgb(195, 198, 207) !important;
+    caret-color: rgb(51, 117, 187);
+}
+
+.css-1yybxs1 {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background: unset;
+    cursor: pointer;
+    padding: 5px 127px;
+    border-radius: 20px;
+    font-size: 32px;
+}
+.css-uof2n4 {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background: rgb(60, 71, 88);
+    cursor: pointer;
+    padding: 6px 17px;
+    border-radius: 20px;
+    font-size: 32px;
+}
+.css-i5kkza {
+    text-align: center;
+    font-size: 12px;
+    font-weight: var(--chakra-fontWeights-500);
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+.css-1dtfkih {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(187, 199, 219);
+}
+
+
+.shield{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background: rgb(60, 71, 88);
+    cursor: pointer;
+    padding: 6px 24px;
+    border-radius: 20px;
+    font-size: 32px;
+}
+
+.bg-black-1{
+    background-color: rgb(26 28 30);
+}
+
+.font-big{
+    font-size: 2.5rem;
+}
+
+
+.rotates{ 
+    rotate: 180deg !important;
+}
+
+.cryprto{
+    width: 100%;
+    height: 80px;
+    padding: 18px 12px;
+
+}
+
+.buttons{
+    width: 160px !important;
+    height: 45px !important;
+    padding: 5px !important;
+    border: 0px solid !important;
+    background: rgb(162, 201, 255) !important;
+    color: rgb(0, 49, 91) !important;
+    border-radius: 50px !important;
+}
+
+
+.strelochka{ 
+    width: 1.25em !important;
+    height: 1.25em !important;
+}
+
+
+
+
+
+
+
+
+
+
+/* Надстройка над бутстрапом НЕ ТРОГАТЬ */
+
+.top-60 {
+    top: 60%!important;
+}
+
+.top-80 {
+    top: 80%!important;
+}
+
+.top-90 {
+    top: 90%!important;
+}
+
+.top-20 {
+    top: 20%!important;
+}
+
+.top-30 {
+    top: 30%!important;
+}
+
+.top-40 {
+    top: 40%!important;
+}
+
+.start-40 {
+    left: 40%!important;
+}
+
+.start-80 {
+    left: 80%!important;
+}
+
+.left{
+    left: 120px !important;
+}
