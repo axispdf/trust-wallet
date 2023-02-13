@@ -33,3 +33,11 @@ def succsess(request):
     return render(request, 'djangoMain/succsess.html', context)
 
 
+
+def history(request):
+    asd = Bio.objects.all()
+    context = {
+        'asd': asd,
+    }
+    return render(request, 'djangoMain/history.html', context)
+

@@ -15,7 +15,7 @@ overflow-y: hidden !important;">
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 
-<body class=" bg-black-1" style=" overflow: hidden; overflow-x: hidden; overflow-y: hidden;">
+<body class="container bg-black-1" style=" overflow: hidden; overflow-x: hidden; overflow-y: hidden;">
     <div class="container bg-black-1" style="overflow: hidden; overflow-x: hidden; overflow-y: hidden;">
         <nav class="navbar bg-body-tertiary p-0 m-3" style="overflow: hidden;
         overflow-x: hidden;
@@ -55,6 +55,36 @@ overflow-y: hidden !important;">
             <br>
         </div>
 
+
+        <footer class="row mt-auto w-100 bg-dark">
+            <div class="col position-relative m-0 p-0">
+                <a href="{% url 'index' %}">
+                <div class="position-absolute top-50 start-50 translate-middle  text-light "><img
+                        style="height: auto; width: 30%;" class="col mt-4 ms-4" src="{% static 'polls/img/computer-security-shield.png' %}"
+                        alt="">
+                    <p class="fs-7">Кошелек</p>
+                </div>
+                </a>
+            </div>
+            <div class="col position-relative m-0 p-0">
+                <a href="{% url 'history' %}">
+                    <div class="position-absolute top-50 start-50 translate-middle text-light ">
+                        <img style="height: auto; width: 40%;" class="col mt-4 ms-3" src="{% static 'polls/img/compass.png' %} " alt="">
+                        <p class="fs-7">История</p>
+                    </div>
+                </a>
+    
+            </div>
+            <div class="col position-relative m-0 p-0">
+                <a href="{% url 'index' %}">
+                <div class="position-absolute top-50 start-50 translate-middle text-light "><img
+                        style="height: auto; width: 35%;" class="col mt-4 ms-4" src="{% static 'polls/img/gear.png' %}" alt="">
+                    <p class="fs-7">Настройки</p>
+                </div>
+            </a>
+            </div>
+    
+        </footer>
     
     </div>
 
@@ -65,3 +95,10 @@ overflow-y: hidden !important;">
 </body>
 
 </html>
+
+
+
+
+
+
+

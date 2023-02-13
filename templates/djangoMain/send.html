@@ -73,6 +73,38 @@ overflow-y: hidden !important;">
     </div>
 
 
+
+    
+    <footer class="row mt-auto w-100 bg-dark">
+        <div class="col position-relative m-0 p-0">
+            <a href="{% url 'index' %}">
+            <div class="position-absolute top-50 start-50 translate-middle  text-light "><img
+                    style="height: auto; width: 30%;" class="col mt-4 ms-4" src="{% static 'polls/img/computer-security-shield.png' %}"
+                    alt="">
+                <p class="fs-7">Кошелек</p>
+            </div>
+            </a>
+        </div>
+        <div class="col position-relative m-0 p-0">
+            <a href="{% url 'history' %}">
+                <div class="position-absolute top-50 start-50 translate-middle text-light ">
+                    <img style="height: auto; width: 40%;" class="col mt-4 ms-3" src="{% static 'polls/img/compass.png' %} " alt="">
+                    <p class="fs-7">История</p>
+                </div>
+            </a>
+
+        </div>
+        <div class="col position-relative m-0 p-0">
+            <a href="{% url 'index' %}">
+            <div class="position-absolute top-50 start-50 translate-middle text-light "><img
+                    style="height: auto; width: 35%;" class="col mt-4 ms-4" src="{% static 'polls/img/gear.png' %}" alt="">
+                <p class="fs-7">Настройки</p>
+            </div>
+        </a>
+        </div>
+
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
     </script>

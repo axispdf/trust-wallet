@@ -9,6 +9,7 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('send/', views.send, name='send'),
     path('succsess/', views.succsess, name='succsess'),
+    path('history/', views.succsess, name='history'),
 ]
 
 

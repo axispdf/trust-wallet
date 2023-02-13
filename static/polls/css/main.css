@@ -11,6 +11,87 @@ body{
     overflow: hidden !important;
     overflow-x: hidden !important;
     overflow-y: hidden !important;
+    min-height: 100% !important;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.text-muted1 {
+    --bs-text-opacity: 1;
+    color: rgb(127 149 171 / 75%)!important;
+}
+
+
+.css-1h8u734 {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: row;
+    align-self: center;
+    border-radius: 8px;
+    background: rgb(0, 72, 129);
+    padding: 16px;
+    margin-inline: 14px;
+}
+
+
+.css-1u1ac1f {
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    line-height: 1em;
+    flex-shrink: 0;
+    color: currentcolor;
+    vertical-align: middle;
+    align-self: flex-start;
+    font-size: 23px;
+    margin-top: 8px;
+}
+
+.css-1h8u734 > :not(style) ~ :not(style) {
+    margin-top: 0px;
+    margin-inline: 8px 0px;
+    margin-bottom: 0px;
+}
+
+.css-cb9txq {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.css-n059si {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    line-height: 1em;
+    flex-shrink: 0;
+    color: currentcolor;
+    vertical-align: middle;
+}
+
+.css-wd1wop {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: rgb(47, 48, 51);
+    color: rgb(227, 226, 230);
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+.ms-2-2 {
+    margin-left: 0.7rem!important;
+}
+
+.fs-7{
+    font-size: medium;
 }
 
 footer {
