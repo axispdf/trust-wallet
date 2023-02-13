@@ -14,7 +14,7 @@ User = settings.AUTH_USER_MODEL
 
 class Bio(models.Model):
     users = models.ForeignKey(User, on_delete=models.CASCADE)
-    balance = models.IntegerField(default=0)
+    balance = models.CharField()
 
     def __str__(self):
         return  f'Id {self.users}: {self.balance}'
