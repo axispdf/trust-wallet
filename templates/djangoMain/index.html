@@ -29,8 +29,11 @@ overflow-y: hidden !important;">
         </nav>
         <div class="row">
             <div class="textgig w-100 ps-5" style="padding-left: 20px !important; ">
-                <p class="text-light font-big" style="text-align: center;"> 85 000,00 $</p>
+                {% for i in bio %}
+                <p class="text-light font-big" style="text-align: center;"> {{ i.balance }} $</p>
+                {% endfor %}
             </div>
+
         </div>
         <div class="row" style="margin-right: 8px;overflow: hidden; overflow-x: hidden;overflow-y: hidden;">
             <button class="btn btn-primary m-3 buttons col" type="submit"><a href="{% url 'send' %}"
@@ -69,9 +72,11 @@ overflow-y: hidden !important;">
                     <div class="text-light">1 $</div>
                 </div>
             </div>
+            {% for i in bio %}
             <div class="col-5 text-light">
-                <div class="text-light mt-4" style="text-align: center;">85 000,0 USDT </div>
+                <div class="text-light mt-4" style="text-align: center;">{{ i.balance }} USDT </div>
             </div>
+            {% endfor %}
         </div>
 
 
