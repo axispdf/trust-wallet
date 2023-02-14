@@ -12,3 +12,15 @@ class Bio(models.Model):
 
     def __str__(self):
         return  f'Id {self.users}: {self.balance}'
+
+
+
+class History(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE )
+    amount = models.CharField(max_length=30)
+    crypto = models.CharField(max_length=30)
+    datatimes = models.DateTimeField()
+
+    def __str__(self):
+
+        return  f'ЮЗЕР: {self.user}: ЦЕНА {self.amount}: КРИПТА {self.crypto}'
