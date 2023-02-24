@@ -10,6 +10,5 @@ urlpatterns = [
     path('send/', views.send, name='send'),
     path('succsess/', views.succsess, name='succsess'),
     path('history/', views.history, name='history'),
+    path('erorr/', views.testform, name='test')
 ]
-
-

@@ -1,4 +1,5 @@
 {% load static %}
+{% load l10n %}
 <!doctype html>
 <html lang="en" style="overflow: hidden !important;
 overflow-x: hidden !important;
@@ -15,8 +16,8 @@ overflow-y: hidden !important;">
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 
-<body class=" bg-black-1" style=" overflow: hidden; overflow-x: hidden; overflow-y: hidden;">
-    <div class="container bg-black-1" style="overflow: hidden; overflow-x: hidden; overflow-y: hidden;">
+<body class="container bg-black-1" style=" overflow: hidden; overflow-x: hidden; overflow-y: hidden;">
+    <div class="bg-black-1" style="overflow: hidden; overflow-x: hidden; overflow-y: hidden;">
         <nav class="navbar bg-body-tertiary p-0 m-3" style="overflow: hidden;
         overflow-x: hidden;
         overflow-y: hidden;">
@@ -39,33 +40,30 @@ overflow-y: hidden !important;">
         <hr class="bg-white">
 
         <div class="mb-3 row">
-            <form action="" method="post">
-                {% csrf_token %}
-            <div class="col-sm-10">
-              <input placeholder="Адрес получателя" class="form-control  form-control-static" id="">
+        <form action="" method="post">
+            {% csrf_token %}
+                <div class="col-sm-10">
+                    {{ form.adress }}
+                </div>
             </div>
-          </div>
-          <div class="mb-3 row">
-            <div class="col-sm-10">
-              <input placeholder="Сумма" class="form-control form-control-static" id="">
+            <div class="mb-3 row">
+                <div class="col-sm-10">
+                    {{ form.amount }}
+                </div>
             </div>
-          </div>
-          {% for i in bio %}
-          <p class="chakra-text css-1489zcy">Баланс&nbsp;{{ i.balance }}&nbsp;USDT</p>
-            </div>
-            {% endfor %}
-        <div class="row pt-4">
-            <div class="position-relative">
-                <div class="position-absolute top-50 start-50 translate-middle"><button class="btn btn-primary m-3 buttons" type="submit">
-                    <a href="{% url 'succsess' %}"style="color: #0e0d0d !important; text-decoration: none !important;" > 
-            <svg viewBox="0 0 24 24" focusable="false" class="rotates strelochka chakra-icon css-onkibi" aria-hidden="true">
-                <path fill="currentColor" d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"></path>
-            </svg>
-            Отправить
-            </a>
-        </button></div>
-              </div>
-            </form>
+            {% for i in bio %}
+            <p class="chakra-text css-1489zcy">Баланс&nbsp;{% localize on %} {{ i.balance }} {% endlocalize %}&nbsp;USDT</p>
+                </div>
+                {% endfor %}
+            <div class="row pt-4">
+                <div class="position-relative">
+                    <div class="position-absolute top-50 start-50 translate-middle"><button style="color: #0e0d0d !important; text-decoration: none !important;" class="btn btn-primary m-3 buttons" type="submit">
+                <svg viewBox="0 0 24 24" focusable="false" class="rotates strelochka chakra-icon css-onkibi" aria-hidden="true">
+                    <path fill="currentColor" d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"></path>
+                </svg>Отправить</button>
+                    </div>
+                </div>
+        </form>
         <div class="row">
             <br>
         </div>
@@ -73,9 +71,6 @@ overflow-y: hidden !important;">
 
     
     </div>
-
-
-
     
     <footer class="row mt-auto w-100 bg-dark">
         <div class="col position-relative m-0 p-0">
@@ -104,7 +99,6 @@ overflow-y: hidden !important;">
             </div>
         </a>
         </div>
-
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"

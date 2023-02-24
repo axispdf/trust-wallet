@@ -1,4 +1,5 @@
 {% load static %}
+{% load l10n %}
 <!doctype html>
 <html lang="en" style="overflow: hidden !important;
 overflow-x: hidden !important;
@@ -28,10 +29,12 @@ overflow-y: hidden !important;">
             </div>
         </nav>
         <div class="row">
+            
             <div class="textgig w-100 ps-5" style="padding-left: 20px !important; ">
-                {% for i in bio %}
-                <p class="text-light font-big" style="text-align: center;"> {{ i.balance }} $</p>
+                {%  for p in bio %}
+                <p class="text-light font-big" style="text-align: center;"> {% localize on %} {{ p.balance|localize }} {% endlocalize %} $</p>
                 {% endfor %}
+                
             </div>
 
         </div>
@@ -72,11 +75,11 @@ overflow-y: hidden !important;">
                     <div class="text-light">1 $</div>
                 </div>
             </div>
-            {% for i in bio %}
             <div class="col-5 text-light">
-                <div class="text-light mt-4" style="text-align: center;">{{ i.balance }} USDT </div>
+                {%  for p in bio %}
+                <div class="text-light mt-4" style="text-align: center;"> {{ p.balance }} USDT </div>
+                {% endfor %}
             </div>
-            {% endfor %}
         </div>
 
 
